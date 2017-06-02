@@ -82,7 +82,7 @@ class r10k::webhook(
   }
 
   service { 'webhook':
-    ensure => $ensure_service,
+    ensure => stopped,
     enable => $ensure,
   }
 
